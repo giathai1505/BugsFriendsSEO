@@ -1,0 +1,29 @@
+
+.comment-section>*{
+  margin-bottom: 1.5rem;
+}
+.avatar-box{
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.comment-box{
+  margin-bottom: 3rem;
+}
+.comment-box textarea{
+  margin-bottom: 1rem;
+}
+.comment-count-text{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: orange;
+}
+.btn{
+  background-color: var(--primary) !important;
+  color: white;
+}

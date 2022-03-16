@@ -1,0 +1,672 @@
+<%- contentFor('head') %> 
+<link rel="stylesheet" href="/public/stylesheets/pages/landing/main.css">
+
+<script src="/public/javascripts/landing.js"></script>
+<%- contentFor('body') %> 
+<section class="page-title-sec">
+	<div class="wrapper">
+		<p class="main-title">The best way to learn to code</p>
+		<p class="description">Courses designed by experts with real-world practice.<br> Join our global community. <span>It's free.</span></p>
+		<div class="btn-wrapper d-flex">
+			<button>Start learning now!</button>
+		</div>
+	</div>
+</section>
+<section class="courses-sec">
+	<div class="wrapper d-flex">
+		<button class="sliding-btn"><i class="fas fa-angle-left"></i></button>
+		<div class="slider">
+			<div class="inner d-flex">
+				<a href="/courses/python">
+					<div class="course-box-wrapper">
+						<div class="course-box">
+							<div><img src="/public/assets/images/landing/python-core.png" alt=""></div>
+							<p>Python Core python</p>
+						</div>
+						
+					</div>
+				</a>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/c++.png" alt=""></div>
+						<p>C++</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/java.png" alt=""></div>
+						<p>Java</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/js.png" alt=""></div>
+						<p>Javascript</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/marketers.png" alt=""></div>
+						<p>Coding for Marketers</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/c-sharp.png" alt=""></div>
+						<p>C#</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/html.png" alt=""></div>
+						<p>HTML</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/css.png" alt=""></div>
+						<p>CSS</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/responsive.png" alt=""></div>
+						<p>Responsive</p>
+					</div>
+				</div>
+				<div class="course-box-wrapper">
+					<div class="course-box">
+						<div><img src="/public/assets/images/landing/python-beginner.png" alt=""></div>
+						<p>Python for Beginners</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="sliding-btn"><i class="fas fa-angle-right"></i></button>
+	</div>
+</section>
+<section class="info-sec">
+	<div class="info-template">
+		<div class="info-card">
+			<img src="/public/assets/images/landing/sl-info-card-1.svg" alt="">
+			<div class="text-wrapper">
+				<p class="info-title">Tailored to you</p>
+				<p class="description">No matter your experience level, you'll be writing <span class="description-highlight">real, functional code within minutes</span> of starting your first course. </p>
+			</div>
+		</div>
+		<div class="info-card">
+			<img src="/public/assets/images/landing/sl-info-card-2.svg" alt="">
+			<div class="text-wrapper">
+				<p class="info-title">Bite-sized</p>
+				<p class="description">Go step-by-step through our unique courses. Assess what you’ve learned with in-lesson quizzes, and <span class="description-highlight">gradually advance your skills with practice.</span></p>
+			</div>
+		</div>
+		<div class="info-card">
+			<img src="/public/assets/images/landing/sl-info-card-3.svg" alt="">
+			<div class="text-wrapper">
+				<p class="info-title">Get proof</p>
+				<p class="description"><span class="description-highlight">Earn a certificate </span>to validate your newly acquired skills. Post it on social for others to see.</p>
+			</div>
+		</div>
+		<div class="info-card info-card-extended d-flex">
+			<div class="text-wrapper">
+				<p class="info-title">Learning on the go</p>
+				<p class="description"><span class="description-highlight">Learn on the web or on the go.</span> Sololearn is always ready for you and you'll never lose your place.</p>
+				<div class="d-flex">
+					<a href=""><img src="/public/assets/images/landing/download-app-store-icon.png" alt=""></a>
+					<a href=""><img src="/public/assets/images/landing/download-gg-play-icon.png" alt=""></a>
+				</div>
+			</div>
+			<img src="/public/assets/images/landing/sl-phone.svg" alt="">
+		</div>
+		<div class="info-card">
+			<img src="/public/assets/images/landing/sl-info-card-4.svg" alt="">
+			<div class="text-wrapper">
+				<p class="info-title">More than 20 courses</p>
+				<p class="description">From Python, through data, to web dev. <span class="description-highlight">We got everything you need.</span></p>
+				<a href="#">Go to courses ></a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="feature-sec container">
+	<div class="row">
+		<div class="d-flex">
+			<div class="title-heading-bar"></div>
+			<p id="feature-sec-title" class="info-title"></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-5">
+			<img style="width: 100%;" src="/public/assets/images/landing/feature-background.jpg" alt="">
+		</div>
+		<div class="col-7">
+			<div class="feature-container">
+				<div>
+					<span><i class="fas fa-code"></i></span>
+					<h5>Coding</h5>
+					<p>Coding playground with online compiler</p>
+				</div>
+				<div>
+					<span><i class="fas fa-blog"></i></span>
+					<h5>Blog</h5>
+					<p>Well written blogs by talented authors</p>
+				</div>
+				<div>
+					<span><i class="fas fa-certificate"></i></span>
+					<h5>Course</h5>
+					<p>Getting certificate by joining courses</p>
+				</div>
+				<div>
+					<span><i class="far fa-comment-alt"></i></span>
+					<h5>Discuss</h5>
+					<p>Having questions? Just post it here</p>
+				</div>
+				<div>
+					<span><i class="fab fa-font-awesome-flag"></i></span>
+					<h5>Challenge</h5>
+					<p>Getting better by challenging other learners</p>
+				</div>
+				<div>
+					<span><i class="fab fa-wpexplorer"></i></span>
+					<h5>Explore</h5>
+					<p>Exploring project built by other people</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="blog-sec container">
+	<div class="row">
+		<div class="d-flex">
+			<div class="title-heading-bar"></div>
+			<p class="info-title">Blog</p>
+		</div>
+	</div>
+	<div class="container" style="text-align: center; margin-bottom: 2rem;">
+		<h2>Lasted from Our blog</h2>
+		<p>You can relay on our amazing features list and also our customer services <br> will be great experience for you without doubt</p>
+	</div>
+	<div class="blog-item-container">
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="/blogs/posts/detail">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="#">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="#">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="blog-item-container">
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="#">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="#">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="card text-white">
+			<img src="/public/assets/images/landing/blog-wall-1.jpg" class="card-img" alt="...">
+			<a href="#">
+				<div class="card-img-overlay">
+					<div class="hidden-overlay-panel">
+						<div class="d-flex align-items-center">
+							<div class="author-tag">Thuan nhan</div>
+							<p>Feb 18, 2018</p>
+						</div>
+						<h5 class="card-title">Post about javascript</h5>
+						<p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<p class="more-info-link"><a href="/blogs/all-post?page=1">View all post >></a></p>
+	</div>
+</section>
+<section class="member-sec">
+	<div class="wrapper container">
+		<div class="row">
+			<div class="d-flex">
+				<div class="title-heading-bar"></div>
+				<p class="info-title">Members</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="member-card-container">
+				<div class="member-card">
+					<div class="top">
+						<div class="avatar">
+							<img src="/public/assets/images/landing/person.jpg" alt="">
+						</div>
+					</div>
+					<div class="body">
+						<h3 style="text-align: center;">Name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<div class="d-flex justify-content-center">
+							<button class="black-animated-background-btn">More info</button>
+						</div>
+						<div class="social-media-container d-flex justify-content-center">
+							<div class="social-media-item"><i class="far fa-envelope"></i></div>
+							<div class="social-media-item"><i class="fab fa-facebook-f"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-instagram"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="member-card">
+					<div class="top">
+						<div class="avatar">
+							<img src="/public/assets/images/landing/person.jpg" alt="">
+						</div>
+					</div>
+					<div class="body">
+						<h3 style="text-align: center;">Name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<div class="d-flex justify-content-center">
+							<button class="black-animated-background-btn">More info</button>
+						</div>
+						<div class="social-media-container d-flex justify-content-center">
+							<div class="social-media-item"><i class="far fa-envelope"></i></div>
+							<div class="social-media-item"><i class="fab fa-facebook-f"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-instagram"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="member-card">
+					<div class="top">
+						<div class="avatar">
+							<img src="/public/assets/images/landing/person.jpg" alt="">
+						</div>
+					</div>
+					<div class="body">
+						<h3 style="text-align: center;">Name</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<div class="d-flex justify-content-center">
+							<button class="black-animated-background-btn">More info</button>
+						</div>
+						<div class="social-media-container d-flex justify-content-center">
+							<div class="social-media-item"><i class="far fa-envelope"></i></div>
+							<div class="social-media-item"><i class="fab fa-facebook-f"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-linkedin-in"></i></div>
+							<div class="social-media-item"><i class="fab fa-instagram"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 2rem;">
+			<p class="more-info-link"><a href="/portfolio">More about us</a></p>
+		</div>
+	</div>
+</section>
+<section class="feedback-sec container">
+	<div class="container" style="margin-bottom: 2rem;">
+		<h2><strong>CLIENT FEEDBACK</strong></h2>
+		<p>Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it<br> curiosity departure ourselves very extreme future.</p>
+	</div>
+	<div class="row">
+		<div class="col">
+			<img style="width: 90%;" src="/public/assets/images/landing/client-background.jpg" alt="">
+		</div>
+		<div class="col">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="feedback-item">
+							<span><i class="fas fa-quote-left"></i></span>
+							<div class="line"></div>
+							<div class="quote-content-container">
+								<p class="quote">The next generation of the web’s favorite icon library + toolkit is now available as a Beta release! Try out the Free version.</p>
+								<div class="d-flex author-card">
+									<div class="avatar">
+										<img src="/public/assets/images/landing/person.jpg" alt="">
+									</div>
+									<div>
+										<p>Devin Hamilton</p>
+										<p>Client</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="feedback-item">
+							<span><i class="fas fa-quote-left"></i></span>
+							<div class="line"></div>
+							<div class="quote-content-container">
+								<p class="quote">The next generation of the web’s favorite icon library + toolkit is now available as a Beta release! Try out the Free version.</p>
+								<div class="d-flex author-card">
+									<div class="avatar">
+										<img src="/public/assets/images/landing/person-1.jpg" alt="">
+									</div>
+									<div>
+										<p>Roberto Firmino</p>
+										<p>Client</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="feedback-item">
+							<span><i class="fas fa-quote-left"></i></span>
+							<div class="line"></div>
+							<div class="quote-content-container">
+								<p class="quote">The next generation of the web’s favorite icon library + toolkit is now available as a Beta release! Try out the Free version.</p>
+								<div class="d-flex author-card">
+									<div class="avatar">
+										<img src="/public/assets/images/landing/person-2.jpg" alt="">
+									</div>
+									<div>
+										<p>Sadio Mane</p>
+										<p>Client</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<section class="community-sec d-flex">
+	<div class="left-container">
+		<div class="dot-row">
+			<div class="dot medium-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot big-dot"></div>
+			<div class="dot medium-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot small-dot"></div>
+			<div class="dot big-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot super-dot"></div>
+		</div>
+	</div>
+	<div class="middle">
+		<p>Supportive community</p>
+		<p class="amount-text">45.336.189</p>
+		<p class="description">Share your code or questions and get instant feedback or become a creator and spread your knowledge and experience with our global community of learners.</p>
+		<img src="/public/assets/images/landing/code-panel.png" alt="">
+	</div>
+	<div class="right-container">
+		<div class="dot-row">
+			<div class="dot small-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot big-dot"></div>
+			<div class="dot medium-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot small-dot"></div>
+			<div class="dot super-dot"></div>
+		</div>
+		<div class="dot-row">
+			<div class="dot big-dot"></div>
+		</div>
+	</div>
+</section>
+<section class="statistic-sec">
+	<div class="statistic-item">
+		<img src="/public/assets/images/landing/group-icon.png" alt="">
+		<div class="number">2m+</div>
+		<p>Users</p>
+	</div>
+	<div class="statistic-item">
+		<img src="/public/assets/images/landing/online-course-icon.png" alt="">
+		<div class="number">30+</div>
+		<p>Courses</p>
+	</div>
+	<div class="statistic-item">
+		<img src="/public/assets/images/landing/download-icon.png" alt="">
+		<div class="number">10m+</div>
+		<p>Downloads</p>
+	</div>
+</section>
+<section class="dream-job-sec d-flex">
+	<div class="text-container">
+		<p class="info-title">We have helped hundreds of</p>
+	</div>
+	<div class="text-container job-title-container">
+		<p class="info-title">Construction Workers</p>
+		<p class="info-title">Designers</p>
+		<p class="info-title">Delivery Drivers</p>
+		<p class="info-title">Product managers</p>
+		<p class="info-title">IT Coordinators</p>
+	</div>
+	<div class="text-container">
+		<p class="info-title">to finally <span>land a dream job</span></p>
+	</div>
+</section>
+<section class="why-code-sec">
+	<div class="header">
+		<p>Why <span>Code</span></p>
+	</div>
+	<div class="card-container d-flex">
+		<div class="wc-card">
+			<img src="/public/assets/images/landing/home-why-code-1.svg" alt="">
+			<div>
+				<p class="info-title">It’s popular</p>
+				<p class="description"><span class="description-highlight">Technical skills are in high demand.</span> Over 60% of new jobs worldwide will require tech skills.</p>
+			</div>
+		</div>
+		<div class="wc-card">
+			<img src="/public/assets/images/landing/home-why-code-2.svg" alt="">
+			<div>
+				<p class="info-title">It's promising</p>
+				<p class="description">Unlock your earning potential! Entry-level programmers in the U.S. earn on <span class="description-highlight">average over $78,000 in salary.</span></p>
+			</div>
+		</div>
+		<div class="wc-card">
+			<img src="/public/assets/images/landing/home-why-code-3.svg" alt="">
+			<div>
+				<p class="info-title">It’s fun</p>
+				<p class="description">Imagine combining your passion and skill with your creativity, and <span class="description-highlight">making something new everyday!</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="description-wrapper description">Start right here on Sololearn by coding with our Code Playground and posting your coolest projects for all to see!</div>
+	<div class="button-wrapper">
+		<button>start learning</button>
+	</div>
+</section>
+<section class="pro-sec">
+	<div class="header d-flex">
+		<p>Invest in yourself with</p>
+		<div>Pro</div>
+	</div>
+	<div class="card-container d-flex">
+		<div class="ps-card">
+			<h2>Unlimited practice</h2>
+			<p>2x</p>
+			<p class="description">Pro users are twice as likely to incorporate practice in their learning plan</p>
+		</div>
+		<div class="ps-card">
+			<h2>Ad-free experience</h2>
+			<p>+132%</p>
+			<p class="description">Pro users spend 132% more time learning than regular ones.</p>
+		</div>
+		<div class="ps-card">
+			<h2>Habit formation</h2>
+			<p>92%</p>
+			<p class="description">Pro users that set up daily goals have the highest lesson completion rate of 92%!</p>
+		</div>
+	</div>
+	<div class="feature-panel">
+		<p>
+			<span><i class="fas fa-check"></i>Unlimited practice</span>
+			<span><i class="fas fa-check"></i>Ad-free experience</span>
+			<span><i class="fas fa-check"></i>Progress statistics</span>
+			<span><i class="fas fa-check"></i>Daily goals</span>
+		</p>
+		<p>
+			<span><i class="fas fa-check"></i>Habit building features</span>
+			<span><i class="fas fa-check"></i>Lesson shortcuts</span>
+			<span><i class="fas fa-check"></i>Real life challenges</span>
+		</p>
+	</div>
+	<div class="btn-container">
+		<button>Start learning like a pro</button>
+	</div>
+</section>
+<section class="award-sec">
+	<h1>Award winning experience</h1>
+	<div class="award-container d-flex">
+		<div class="award-box">
+			<p>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+			</p>
+			<p>4.8 from 5</p>
+			<small>Stars on the AppStore</small>
+		</div>
+		<div class="award-box">
+			<p><i class="fab fa-facebook-square"></i></p>
+			<p>App Of The Year</p>
+			<small>FB Start by Facebook</small>
+		</div>
+		<div class="award-box">
+			<p><i class="fab fa-google-play"></i></p>
+			<p>Editors' Choice</p>
+			<small>Google Play</small>
+		</div>
+	</div>
+</section>
+<section class="contact-sec">
+	<div class="wrapper container">
+		<div class="row">
+			<div class="col">
+				<h1>We'd love to hear from you</h1>
+				<div class="d-flex contact-item-container">
+					<div class="contact-item">
+						<div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+						<div>
+							<p>Office Address</p>
+							<p>3812 Lena Lane City Jackson Mississippi</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="icon"><i class="fas fa-phone-volume"></i></i></div>
+						<div>
+							<p>Phone Number</p>
+							<p>601-594-3504</p>
+						</div>
+					</div>
+					<div class="contact-item">
+						<div class="icon"><i class="far fa-envelope"></i></div>
+						<div>
+							<p>Email</p>
+							<p>4cfdx9dy9e@temporary-mail.net</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<form action="" class="container-fluid contact-form">
+					<div class="row">
+						<div class="col"><input type="text" placeholder="Your Full Name*"></div>
+						<div class="col"><input type="text" placeholder="Your Email Address*"></div>
+					</div>
+					<div class="row">
+						<div class="col"><input type="text" placeholder="Phone Number"></div>
+						<div class="col"><input type="text" placeholder="Your Website link"></div>
+					</div>
+					<div class="row">
+						<div class="col"><input type="text" placeholder="Subject..."></div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<textarea name="" id="" cols="30" rows="6" placeholder="Your message..."></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button class="black-animated-background-btn">SendMessage <i class="fas fa-angle-right"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="last-sec">
+	<h1>Coding has never been easier</h1>
+	<button>Start learning now</button>
+</section>

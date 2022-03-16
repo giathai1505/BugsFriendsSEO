@@ -1,0 +1,13 @@
+
+:root{
+  --primary: rgb(52, 69, 229); 
+  /* 60% */
+  --secondary:#181824;
+  /* 30% */
+  --accent: #181824;
+  /* 10% */
+  /* theme */
+  --background-light: #f0f7f6;
+  
+  --text-color-primary: #333;
+}
