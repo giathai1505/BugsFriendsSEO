@@ -5,7 +5,7 @@
     <div class="allPost_item-content">
     <div class="allPost_item-content-head">
         <p><%= post.category %> </p>
-        <p><i class="fas fa-calendar-alt"></i><%= post.date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}); %></p></div>
+        <p><i class="fas fa-calendar-alt"></i><%= post.date.toLocaleDateString('vi', { day: 'numeric', month: 'numeric', year: 'numeric'}); %></p></div>
         <h5><%= post.title %></h5>
         <p class="desc"><%= post.intro %> </p>
     </div>
