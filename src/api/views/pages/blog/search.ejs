@@ -1,47 +1,50 @@
-<%- contentFor("head") %> 
-<title>Search page</title>
-<link rel="stylesheet" href="/public/stylesheets/pages/blog/search.css">
+<%- contentFor("head") %>
+<title>Trang tìm kiếm</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/blog/search.css" />
 
-<%- contentFor("body") %> 
+<%- contentFor("body") %>
 <div class="container main">
-  <h2>Search</h2>
-  <form action="/blogs/search" method="GET">
-    <div class="d-flex search-bar">
-      <input name="searchKey" placeholder="Nhap tieu de bai viet" type="text">
-      <button type="submit"><i class="fas fa-search"></i> search</button>
+    <h2>Tìm kiếm</h2>
+    <form action="/blogs/search" method="GET">
+        <div class="d-flex search-bar">
+            <input name="searchKey" placeholder="Nhap tieu de bai viet" type="text" />
+            <button type="submit"><i class="fas fa-search"></i> Tìm kiếm</button>
+        </div>
+        <div class="d-flex justify-content-between">
+            <h4>Kết quả</h4>
+            <button
+                class="advanced-search-collapse-btn"
+                type="button"
+                data-toggle="collapse"
+                data-target="#advanced-search-panel"
+                aria-expanded="false"
+                aria-controls="advanced-search-panel"
+            >
+                Tìm kiếm nâng cao <i class="fas fa-angle-down"></i>
+            </button>
+        </div>
+        <div class="collapse" id="advanced-search-panel">
+            <div style="padding: 0.5rem 0">
+                <span>Chuyên mục: </span>
+                <select name="category" aria-label=".form-select-sm example">
+                    <option value="all" selected>Tất cả</option>
+                    <option value="html">HTML</option>
+                    <option value="js">js</option>
+                    <option value="css">css</option>
+                </select>
+                <span>Thời gian: </span>
+                <select name="time" aria-label=".form-select-sm example">
+                    <option value="Infinity" selected>Tất cả</option>
+                    <option value="1">Hôm nay</option>
+                    <option value="7">7 ngày trước</option>
+                    <option value="30">30 ngày trước</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <p><strong><%= result.length %></strong> Kết quả phù hợp</p>
+    <div class="result-box">
+        <% if(result.length == 0){ %> <%- include('../../partials/no-result-item.ejs') %> <% }else{ %> <%
+        result.forEach((post)=>{ %> <%- include('./partials/search-post-item.ejs', {post}) %> <% }) %> <% } %>
     </div>
-    <div class="d-flex justify-content-between">
-      <h4>Result</h4>
-      <button class="advanced-search-collapse-btn" type="button" data-toggle="collapse" data-target="#advanced-search-panel" aria-expanded="false" aria-controls="advanced-search-panel">Advanced search <i class="fas fa-angle-down"></i></button>
-      
-    </div>
-    <div class="collapse" id="advanced-search-panel">
-      <div style="padding: .5rem 0;">
-        <span>Chuyên mục: </span>
-        <select name="category" aria-label=".form-select-sm example">
-          <option value="all" selected>Tất cả</option>
-          <option value="html">HTML</option>
-          <option value="js">js</option>
-          <option value="css">css</option>
-        </select>
-        <span>Thời gian: </span>
-        <select name="time" aria-label=".form-select-sm example">
-          <option value="Infinity" selected>Tất cả</option>
-          <option value="1">Hôm nay</option>
-          <option value="7">7 ngày trước</option>
-          <option value="30">30 ngày trước</option>
-        </select>
-      </div>
-    </div>
-  </form>
-  <p><strong><%= result.length %></strong> Kết quả phù hợp</p>
-  <div class="result-box">
-    <% if(result.length == 0){ %>
-      <%- include('../../partials/no-result-item.ejs') %> 
-    <% }else{ %>
-      <% result.forEach((post)=>{ %>
-        <%- include('./partials/search-post-item.ejs', {post}) %> 
-      <% }) %> 
-    <% } %> 
-  </div>
 </div>
