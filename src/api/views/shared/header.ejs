@@ -1,47 +1,61 @@
-
-<script defer src="/public/javascripts/login.js"></script> 
+<script defer src="/public/javascripts/login.js"></script>
 <header>
-	<a href="/"><img src="/public/assets/images/logoWeb.png" alt=""></a>
-	<div>
+    <a href="/"><img src="/public/assets/images/logoWeb.png" alt="" /></a>
+    <div>
         <div class="d-flex align-items-center">
             <ul>
                 <li><a href="/courses">Khóa học</a></li>
                 <li><a href="/codingPlayground">Code playground</a></li>
-                <li><a href="/discusses">Thảo Luận</a></li>
-                <li><a href="/blogs">Bài viết</a></li>
+
+                <li><a href="/discusses">Thảo luận</a></li>
+                <li><a href="/blogs">Blog</a></li>
             </ul>
             <div class="header-btn-wrapper">
-                <button id="loginBtn">Đăng Nhập</button>
-                <button><a href="/auth/sign-up">Đăng kí</a> </button>
+                <button id="loginBtn">Đăng nhập</button>
+                <button><a href="/auth/sign-up">Đăng ký</a></button>
+
             </div>
         </div>
         <div class="layout" id="layout_login">
-
             <div class="content_login" id="content_login">
                 <div class="login_header">
-                    <a href="/auth/sign-up">Sing up</a>
-                    <a href="">Get started free</a>
+                    <a href="/auth/sign-up">Đăng ký</a>
+                    <a href="">Bắt đầu ngay</a>
                     <button id="close_login"><i class="far fa-times-circle"></i></button>
                 </div>
-    
-                <h4>Sign in to learn more</h4>
+
+                <h4>Đăng nhập ngay để trải nghiệm</h4>
                 <div class="quick_login">
-                    <button><i class="fab fa-google-plus-g"></i>Login with google</button>
+                    <button><i class="fab fa-google-plus-g"></i>Đăng nhập với Google</button>
                     <button><i class="fab fa-twitter"></i></button>
                 </div>
-                <span>Or</span>
+                <span>Hoặc</span>
                 <form action="/auth/login" method="POST">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <label for="exampleFormControlInput1" class="form-label">Địa chỉ Email</label>
+                        <input
+                            name="email"
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="name@example.com"
+                        />
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
-                        <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="******">
-    
+                        <label for="exampleFormControlTextarea1" class="form-label">Mật khẩu</label>
+                        <input
+                            name="password"
+                            type="password"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="******"
+                        />
                     </div>
-                    <p>When click to sign up button, you agree with CodeLearn <a href="">terms and conditons of use</a></p>
-                    <button type="submit" class="btn btn-primary">SIGN IN</button>
+                    <p>
+                        Khi nhấn nút đăng nhập bên dưới nghĩa là bạn đã đồng ý với tất cả
+                        <a href="">điều khoản và điều kiện sử dụng</a>
+                    </p>
+                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
                 </form>
             </div>
         </div>

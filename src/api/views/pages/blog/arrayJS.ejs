@@ -1,0 +1,364 @@
+<%- contentFor('head') %>
+<title>Những điều cần biết về mảng trong Javascript</title>
+<script src="/public/javascripts/post-detail.js"></script>
+<link rel="stylesheet" href="/public/stylesheets/pages/blog/detail.css" 
+/>
+
+<%- contentFor('body') %>
+<div id="main">
+    <div class="img-container"></div>
+    <div class="post-section">
+        <div class="main-post-section">
+            <div class="post-content">
+                <h5 class="post-type">Blog công nghệ</h5>
+                <h1>Những điều cần biết về mảng trong Javascript</h1>
+                <div class="head">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <a href="#"><i class="far fa-user"></i> Khang Hoàng</a>
+                            <p class="posted-date"><i class="far fa-clock"></i> Thứ 5, 24/03/2022 16:30 (GMT+7)</p>
+                        </div>
+                        <p><i class="far fa-eye"></i> 225</p>
+                    </div>
+                </div>
+                <!-- <p>Đáp án đến từ bạn <a href="https://hoovada.com/profile/nguyen-phuc" target="_blank">Nguyễn Phúc</a> - một thành viên của <a href="https://hoovada.com/" target="_blank"></a>Hoovada sống tại TPHCM</p> -->
+                <p>
+                    Chào các bạn, hôm nay chúng ta sẽ tìm hiểu những điều cần biết về mảng trong javascript nha 😊
+                </p>
+                <h2 id="item-1">1 Mảng là gì?</h2>
+                <p>
+                    Tương tự như mảng trong các ngôn ngữ lập trình khác, cho phép lưu trữ một tập hợp nhiều phần tử dưới một tên biến duy nhất và có các hàm cũng như các thuộc tính hỗ trợ để thực hiện các phép toán mảng phổ biến. Mảng trong javascript có các đặc điểm cốt lõi như sau:
+                    <ul>
+                        <li>Mảng trong javascript có thể thay đổi kích thước và có thể chứa nhiều kiểu dữ liệu khác nhau.</li>
+                        <li>Mảng trong javascript không phải là mảng kết hợp, do đó không thể truy cập các phần tử trong mảng bằng cách dùng chuỗi làm chỉ mục, thay vào đó ta phải dùng số nguyên.</li>
+                        <li>Phần tử đầu tiên trong mảng có giá trị chỉ mục bằng 0 và được tăng dần cho đến phần tử cuối cùng có giá trị chỉ mục bằng độ dài của mảng trừ đi 1.</li>
+                        <li>Có hai loại sao chép mảng trong javascript đó là shallow copies và deep copies.</li>
+                    </ul>
+                </p>
+                <h2 id="item-2">2 Các thao tác với mảng</h2>
+                <h4 id="item-2-1">2.1 Khởi tạo mảng</h4>
+                <div>
+                    <p>
+                        Có nhiều kiểu khởi tạo mảng trong Javascript đó là: 
+                        <ul>
+                            <li>
+                                Khởi tạo trực tiếp
+                                <img src="/public/assets/images/blog/arrayJS_1.png" alt="ví dụ mảng trong javascript">
+                                <p>
+                                    <span>Trong đó: </span>
+                                    <ul>
+                                        <li>array: là tên mảng.</li>
+                                        <li>value1, value2, … , valuen: giá trị của các phần tử trong mảng.</li>
+                                    </ul>
+                                </p>
+                                <p>Ví dụ: <br>
+                                    <img src="/public/assets/images/blog/arrayJS_2.png" alt="ví dụ mảng trong javascript">                                    
+                                </p>
+                            </li>
+                            <li>
+                                Khởi tạo thông qua Constructor
+                                <img src="/public/assets/images/blog/arrayJS_3.png" alt="ví dụ mảng trong javascript">
+                                <p>
+                                    <span>Trong đó: </span>
+                                    <ul>
+                                        <li>array: là tên mảng.</li>
+                                        <li>Array(): là một constructor.</li>
+                                        <li>lenght: độ dài mảng.</li>
+                                    </ul>
+                                </p>
+                                <p>Ví dụ: <br>
+                                    <img src="/public/assets/images/blog/arrayJS_4.png" alt="ví dụ mảng trong javascript">                                    
+                                </p>
+                            </li>
+                            <li>
+                                Khởi tạo mảng bằng phương pháp tĩnh
+                                <p>Ví dụ: <br>
+                                    <img src="/public/assets/images/blog/arrayJS_5.png" alt="ví dụ mảng trong javascript">                                    
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <h4 id="item-2-2">2.2 Truy xuất các phần tử trong mảng</h4>
+                <p>Như phần định nghĩa ở trên, ta có thể dễ dàng truy xuất đến các phần tử trong mảng nhờ vào các chỉ mục của các phần tử. <br> <img src="/public/assets/images/blog/arrayJS_6.png" alt="ví dụ mảng trong javascript">
+                </p>
+                <h4 id="item-2-3">2.3 Các hàm thao tác với mảng</h4>
+                <div>                      
+                            <h5 id="item-2-3-1">2.3.1 Thêm một hoặc nhiều phần tử vào đầu mảng </h5>
+                            <p>
+                                Để thêm mới một phần tử vào mảng, Javascript hỗ trợ ta hàm unshift() giúp cho việc thao tác dễ dàng hơn. Ta chỉ cần gọi hàm unshift() và truyền phần tử mà ta muốn thêm vào. Có thể thêm một hoặc nhiều phần tử. Kết quả trả về là độ dài của mảng sau khi thêm. <br>
+                                <span>Ví dụ: </span> <br>
+                                <img src="/public/assets/images/blog/arrayJS_7.png" alt="ví dụ mảng trong javascript">
+                            </p>
+                        
+                       
+                            <h5 id="item-2-3-2">2.3.2 Thêm một hoặc nhiều phần tử vào cuối mảng </h5>
+                            <p>
+                                Để thêm một phần tử vào cuối mảng thì ta sử dùng hàm push() và đối số truyền vào là giá trị của các phần tử mà ta muốn thêm vào mảng. Tương tự như unshift(), hàm push() sẽ trả về giá trị là độ dài mới của mảng. <br>
+                                <span>Ví dụ: </span> <br>
+                                <img src="/public/assets/images/blog/arrayJS_8.png" alt="ví dụ mảng trong javascript">
+                            </p>
+                       
+                       
+                            <h5 id="item-2-3-3">2.3.3 Xóa một phần tử ở đầu mảng </h5>
+                            <p>
+                                Phía trên ta đã tìm hiểu về thêm phần tử ở đầu mảng và cuối mảng thì ở phần tiếp theo này ta sẽ tìm hiểu về xóa phần tử trong mảng. Để xóa phần tử ở đầu mảng thì ta dùng hàm shift(). Kết quả trả về sẽ là giá trị của phần tử mà ta xóa, mảng gốc cũng sẽ bị thay đổi tương tự như thao tác với các hàm phía trên. <br>
+                                <span>Ví dụ: </span> <br>
+                                <img src="/public/assets/images/blog/arrayJS_9.png" alt="ví dụ mảng trong javascript">
+                            </p>
+                       
+                      
+                            <h5 id="item-2-3-4">2.3.4 Xóa một phần tử ở cuối mảng </h5>
+                            <p>
+                                Ta sử dụng hàm pop() để xóa phần tử ở cuối mảng, kết quả trả về là giá trị của phần tử đó và mảng gốc cũng sẽ bị thay đổi. <br>
+                                <span>Ví dụ: </span> <br>
+                                <img src="/public/assets/images/blog/arrayJS_10.png" alt="ví dụ mảng trong javascript">
+                            </p>
+                        
+                       
+                            <h5 id="item-2-3-5">2.3.5 Thêm hoặc xóa phần tử ở vị trí bất kì </h5>
+                            <p>
+                                Phía trên ta đã tìm hiểu về các thao tác đối với phần tử đầu và cuối trong mảng, phần này ta sẽ cùng tìm hiểu các thao tác đối với phần tử ở vị trí bất kì. Ta sẽ dùng hàm splice(). Kết quả sau khi thực thi sẽ trả về một mảng các phần tử bị xóa. Mảng gốc sẽ bị thay đổi. <br>
+                                <span>Cú pháp: </span> <br>
+                                <img src="/public/assets/images/blog/arrayJS_11.png" alt="ví dụ mảng trong javascript"> <br>
+                                <span>Trong đó: </span>
+                                <ul>
+                                    <li>start: là vị trị bắt đầu để thay đổi mảng.</li>
+                                    <li>deleteCount: là số phần tử cần xóa.</li>
+                                    <li>items: Các phần tử cần thêm vào mảng.</li>
+                                </ul>
+                                <span>Ví dụ: </span>
+                                <img src="/public/assets/images/blog/arrayJS_12.png" alt="ví dụ mảng trong javascript">
+                            </p>
+                       
+                       
+                            <h5 id="2-3-6">2.3.6 Một vài cách thao tác không làm thay đổi mảng gốc:</h5>
+                            <ul>
+                                <li>
+                                    <span>Sử dụng concat: </span>
+                                    <p>Dùng để kết nối 2 hay nhiều mảng lại với nhau. Kết quả trả về là một mảng mới với giá trị các phần tử trong mảng được gộp lại từ 2 hay nhiều mảng mà ta thao tác. <br>
+                                    <span>Ví dụ: </span> <br>
+                                    <img src="/public/assets/images/blog/arrayJS_13.png" alt="ví dụ mảng trong javascript">
+                                    </p>
+                                </li>
+                                <li>
+                                    <span>Sử dụng spread operator: </span>
+                                    <p>Toán tử này sẽ giải các phần tử trong mảng ra. <br>
+                                    <span>Ví dụ: </span> <br>
+                                    <img src="/public/assets/images/blog/arrayJS_14.png" alt="ví dụ mảng trong javascript">
+                                    <p>Ví dụ ứng dụng spread operator trong việc gộp 2 mảng bất kì: </p>
+                                    <img src="/public/assets/images/blog/arrayJS_15.png" alt="ví dụ mảng trong javascript">
+                                    </p>
+
+                                </li>
+                            </ul>
+                       
+                    
+                </div>
+                <h2 id="item-3">3 Kết luận</h2>
+                <p>
+                    Trên đây mình đã giới thiệu những thao tác cơ bản cần biết với mảng trong javascript. Ngoài ra vẫn còn rất nhiều các hàm nâng cao khác hỗ trợ thao tác với mảng như: forEach(), map(), filter(),… Vì vậy chúng ta cần phải không ngừng học hỏi và đọc thêm tài liệu để mở rộng thêm kiến thức nhé 😊 !!!
+                </p>
+                <h4 id="item-3-1">* Một số trang web nổi tiếng mà các bạn có thể tham khảo: </h4>
+                <i
+                    ><span>Một trang web nổi tiếng chia sẻ kiến rất nhiều kiến thức từ cơ bản đến nâng cao về HTML, CSS, JS,...</span> <br>
+                    <a style="color: blue"
+                        href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+                        >https://developer.mozilla.org/en-US/docs/Learn/JavaScript</a
+                    ></i
+                >
+                <br />
+                <i
+                    ><span>Là một trang web rất thân thuộc đối với các lập trình viên Web với rất nhiều tài liệu, ví dụ chi tiết về HTML, CSS, JS, SQL,...</span> <br>
+                    <a style="color: blue" href="https://www.w3schools.com/js/"
+                        >https://www.w3schools.com/js/</a
+                    ></i
+                >
+                <br />
+                <i
+                    ><span>Trang web javascript chuyên sâu dành cho các bạn thích thú và muốn tìm hiểu kĩ về javascript</span>
+                    <a style="color: blue" href="https://devdocs.io/javascript/"
+                        >https://devdocs.io/javascript/</a
+                    ></i
+                >
+                <br>
+            </div>
+            <div class="tag-container">
+                <h5><i class="fas fa-tags"></i> Tags</h5>
+                <div class="d-flex flex-row">
+                    <div class="tag"><a href="#">Web dev</a></div>
+                    <div class="tag"><a href="#">Kỹ thuật</a></div>
+                    <div class="tag"><a href="#">Mảng trong javascript</a></div>
+                    <div class="tag"><a href="#">Javascript từ cơ bản đến nâng cao</a></div>
+                </div>
+            </div>
+            <hr />
+            <div class="share-container">
+                <h5><i class="fas fa-share"></i> Share</h5>
+                <div class="d-flex flex-row">
+                    <div class="share-item"><i class="fab fa-facebook-f"></i>Facebook</div>
+                    <div class="share-item"><i class="fab fa-linkedin-in"></i>Linkedin</div>
+                    <div class="share-item"><i class="fab fa-twitter"></i>Twitter</div>
+                </div>
+            </div>
+            <hr />
+            <div class="related-post">
+                <h4>Bài viết liên quan</h4>
+                <div class="card mb-3" style="max-height: 160px">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="max-height: 180px">
+                            <img src="/public/assets/images/blog/wall-1.jpg" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiêu đề bài viết</h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        ><i class="fas fa-calendar-alt"></i>&nbsp; 10/10/2021</small
+                                    >
+                                </p>
+                                <p class="card-text">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-height: 160px">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="max-height: 180px">
+                            <img
+                                src="/public/assets/images/blog/wall-2.jpg"
+                                class="img-fluid rounded-start"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiêu đề bài viết</h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        ><i class="fas fa-calendar-alt"></i>&nbsp; 10/10/2021</small
+                                    >
+                                </p>
+                                <p class="card-text">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-height: 160px">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="max-height: 180px">
+                            <img src="/public/assets/images/blog/wall-3.jpg" alt="..." />
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiêu đề bài viết</h5>
+                                <p class="card-text">
+                                    <small class="text-muted"
+                                        ><i class="fas fa-calendar-alt"></i>&nbsp; 10/10/2021</small
+                                    >
+                                </p>
+                                <p class="card-text">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <%- include('../../partials/comment-section.ejs') %>
+        </div>
+        <div class="index-table-section">
+            <div class="my-index-table">
+                <h5>Mục lục</h5>
+                <nav class="flex-column ms-3">
+                    <a href="#item-1"><i class="fas fa-chevron-right"></i> 1. Mảng là gì?</a><br />
+                    <a href="#item-2"><i class="fas fa-chevron-right"></i> 2. Các thao tác đối với mảng</a><br />
+                        <a href="#item-2-1"><i class="fas fa-chevron-right"></i> 2.1 Khởi tạo mảng</a><br />
+                    <a href="#item-2-2"><i class="fas fa-chevron-right"></i> 2.2 Truy xuất các phần tử trong mảng</a><br />
+                    <a href="#item-2-3"><i class="fas fa-chevron-right"></i> 2.3 Các hàm thao tác với mảng</a><br />
+                    <a href="#item-3"
+                        ><i class="fas fa-chevron-right"></i> 3. Kết luận</a
+                    ><br />
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="other-post">
+        <h2>Bài viết liên quan</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-4.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-5.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-6.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-7.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-8.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 new-post-card">
+                    <div class="img-container">
+                        <img src="/public/assets/images/blog/wall-9.jpg" class="card-img-top fit-img" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tiêu đề bài viết</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Cập nhật 3 phút trước</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
