@@ -18,8 +18,16 @@ router.get('/courses/python/lesson1', (req, res)=>{
   res.render('pages/course/coursePythonLesson1.ejs', {auth: req.isAuthenticated()})
 })
 
+router.get('/courses/javascript/lesson1', (req, res)=>{
+  res.render('pages/course/courseJavascriptLesson1.ejs', {auth: req.isAuthenticated()})
+})
+
 router.get('/courses/python',expressLayout, (req, res)=>{
   res.render('pages/course/coursePython.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/courses/javascript',expressLayout, (req, res)=>{
+  res.render('pages/course/courseJavascript.ejs', {auth: req.isAuthenticated()})
 })
 
 router.get('/courses',expressLayout, (req, res)=>{

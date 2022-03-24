@@ -3,3 +3,9 @@ itemHead.addEventListener("click", function() {
     angleTop.classList.toggle("fa-angle-up")
 
 })
+
+itemHead1.addEventListener("click", function() {
+    itemContent1.classList.toggle("active")
+    angleTop1.classList.toggle("fa-angle-up")
+
+})
