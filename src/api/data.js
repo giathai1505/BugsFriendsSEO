@@ -13,7 +13,7 @@ const Posts = [
     category: 'series Javascrip nâng cao',
     date: new Date(2021, 9, 20),
     viewName: 'post-1',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 2,
@@ -22,16 +22,16 @@ const Posts = [
     category: 'series Javascrip nâng cao',
     date: new Date(2021, 10, 10),
     viewName: 'post-2',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 3,
-    title: 'How to use async-await',
+    title: 'Cách dùng async-await',
     image: 'js-item3.jpg',
     category: 'series Javascrip nâng cao',
     date: new Date(2020, 5, 1),
     viewName: 'post-1',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 4,
@@ -40,25 +40,25 @@ const Posts = [
     image: 'js-item4.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-4',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 5,
-    title: 'Flex box CSS',
+    title: 'Flex box CSS là gì?',
     category: 'HTML và CSS',
     image: 'htmlcss1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-5',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 6,
-    title: 'Tiêu chuẩn đặt tên BEM trong html',
+    title: 'Tiêu chuẩn đặt tên BEM trong HTML',
     category: 'HTML và CSS',
     image: 'htmlcss2.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-6',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const Posts = [
     image: 'htmlcss3.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-7',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const Posts = [
     image: 'react1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-8',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 9,
@@ -85,7 +85,7 @@ const Posts = [
     image: 'react2.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-9',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 10,
@@ -94,7 +94,7 @@ const Posts = [
     image: 'react3.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-10',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 11,
@@ -103,7 +103,7 @@ const Posts = [
     image: 'react4.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-11',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 12,
@@ -112,7 +112,7 @@ const Posts = [
     image: 'react5.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-12',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 13,
@@ -121,16 +121,16 @@ const Posts = [
     image: 'react6.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-13',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 14,
-    title: 'Work with JSX',
+    title: 'Làm việc với JSX',
     category: 'Reactjs',
     image: 'react67jpg.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-14',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 15,
@@ -139,7 +139,7 @@ const Posts = [
     image: 'react8.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-15',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 16,
@@ -148,16 +148,16 @@ const Posts = [
     image: 'abm1-1.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-16',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 17,
-    title: 'Cách học front end hiệu quả',
+    title: 'Cách học Front End hiệu quả',
     category: 'Experience',
     image: 'abm1-3.jpeg',
     date: new Date(2021, 7, 20),
     viewName: 'post-17',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 18,
@@ -166,7 +166,7 @@ const Posts = [
     image: 'abm1-4.png',
     date: new Date(2021, 7, 20),
     viewName: 'post-18',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 19,
@@ -175,7 +175,7 @@ const Posts = [
     image: 'abm1-5.jpg',
     date: new Date(2021, 7, 20),
     viewName: 'post-19',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
   {
     id: 20,
@@ -184,7 +184,7 @@ const Posts = [
     image: 'abm2.png',
     date: new Date(2021, 7, 20),
     viewName: 'post-20',
-    intro: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.'
+    intro: '...'
   },
 ]
 

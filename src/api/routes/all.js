@@ -17,13 +17,22 @@ router.get('/courses/python/lesson1', (req, res) => {
     res.render('pages/course/coursePythonLesson1.ejs', { auth: req.isAuthenticated() });
 });
 
-router.get('/courses/python', expressLayout, (req, res) => {
-    res.render('pages/course/coursePython.ejs', { auth: req.isAuthenticated() });
-});
 
-router.get('/courses', expressLayout, (req, res) => {
-    res.render('pages/course/coursesList.ejs', { auth: req.isAuthenticated() });
-});
+router.get('/courses/javascript/lesson1', (req, res)=>{
+  res.render('pages/course/courseJavascriptLesson1.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/courses/python',expressLayout, (req, res)=>{
+  res.render('pages/course/coursePython.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/courses/javascript',expressLayout, (req, res)=>{
+  res.render('pages/course/courseJavascript.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/courses',expressLayout, (req, res)=>{
+  res.render('pages/course/coursesList.ejs', {auth: req.isAuthenticated()})
+})
 
 // discussion
 router.get('/discusses', expressLayout, (req, res) => {
@@ -58,6 +67,7 @@ router.get('/blogs', expressLayout, (req, res) => {
 
 // posts route
 
+
 router.get('/blogs/posts/detail', expressLayout, (req, res) => {
     res.render('pages/blog/detail.ejs', { auth: req.isAuthenticated() });
 });
@@ -65,6 +75,10 @@ router.get('/blogs/posts/detail', expressLayout, (req, res) => {
 router.get('/blogs/posts/arrayJS', expressLayout, (req, res) => {
     res.render('pages/blog/arrayJS.ejs', { auth: req.isAuthenticated() });
 });
+
+router.get('/blogs/posts/lo-trinh-JS', expressLayout, (req, res)=>{
+  res.render('pages/blog/lo-trinh-JS.ejs', {auth: req.isAuthenticated()})
+})
 
 //coding playground
 router.get('/codingPlayground', expressLayout, (req, res) => {

@@ -16,74 +16,76 @@
 <body>
     <div class="wrap">
         <div class="lesson_header">
-            <a href="/courses/python"><i class="fas fa-angle-left"></i>Trở lại khóa học</a>
+            <a href="/courses/javascript"><i class="fas fa-angle-left"></i>Trở lại khóa học</a>
             <div class="lesson_tap">
                 <span class="current" id="0"></span>
                 <span id="1"></span>
                 <span id="2"></span>
                 <span id="3"></span>
             </div>
-            <p id="displayComment"><i class="fas fa-angle-left"></i>2087 comments</p>
+            <p id="displayComment"><i class="fas fa-angle-left"></i>1234 bình luận</p>
         </div>
         <div class="lesson_bodoy">
             <div class="lesson_content">
                 <div class="lesson_content1" >
-                    <h4>Bài 1: "Hello world</h4>
-                    <p>Hãy bắt đầu bằng cách tạo một chương trình ngắn hiển thị "Hello world!". Trong Python, chúng tôi sử dụng câu lệnh print để xuất ra văn bản.</p>
-                    <div class="try_code">
-                        <p>print('hello world')</p>
-                        <button class="btn btn-primary">Thực hiện</button>
-                    </div>
-                    <p>Lưu ý rằng văn bản nên được đặt trong dấu <strong>ngoặc kép hoặc đơn.</strong></p>
-                    <div class="warning">
-                        <i class="fas fa-info-circle"></i>
-                        <p>Câu lệnh print cần phải được theo sau bởi dấu ngoặc đơn, bao gồm đầu ra mà chúng ta muốn tạo.</p>
-                    </div>
+                    <h4>Bài 1: Thông tin khóa học</h4>
+                  <ul style="list-style: none; padding: 0;">
+                      <li style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;"  class="fa-solid fa-check"></i>Hiểu chi tiết về các khái niệm cơ bản trong JS</li>
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Tự tin khi phỏng vấn với kiến thức vững chắc</li>
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Nắm chắc các tính năng trong phiên bản ES6</li>
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Ghi nhớ các khái niệm nhờ bài tập trắc nghiệm</li  >
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Xây dựng được website đầu tiên kết hợp với JS</li  >
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Có nền tảng để học các thư viện và framework JS</li > 
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Thành thạo DOM APIs để tương tác với trang web</li >
+                      <li  style="margin: 10px 0;"><i style="font-size: 24; color: orangered; margin: 0 10px 0 0;" class="fa-solid fa-check"></i>Nâng cao tư duy với các bài kiểm tra với testcases</li>
+
+                  </ul>
                 </div>
                 <div class="lesson_content1" >
-                    <h4>Bài 2: Hiển thị nội dụng</h4>
-                    <p>Câu lệnh in cũng có thể được sử dụng để xuất ra nhiều dòng văn bản</p>
+                    <h4>Bài 2: Helloword</h4>
+                    <p>Console. log là một hàm của Javascript, được sử dụng để <strong>debug</strong> / <strong>Kiểm tra</strong> / <strong>xem</strong> giá trị của một biến trong Javascript.</p>
                     <div class="try_code">
-                        <p>print('hello world')</p>
-                        <p>print('hello world')</p>
-                        <p>print('Ngo Gia Thai')</p>
-                        <button class="btn btn-primary">Thực hiện</button>
+                        <p>var website = 'freetuts.net';
+                           </p>
+                        <p> console.log(website);</p>
+                        <button class="btn btn-primary">Luyện tập</button>
                     </div>
-                    <p>Mỗi câu lệnh in xuất ra văn bản từ một dòng mới.</strong></p>
+                    <p>Ngoài console.log() console còn hỗ trợ nhiều hàm khác nửa.</strong></p>
                     <div class="warning">
                         <i class="fas fa-info-circle"></i>
-                        <p>Mã Python thường chứa các tham chiếu đến nhóm hài Monty Python. Đây là lý do tại sao các từ, "thư rác" và "trứng" thường được sử dụng làm biến giữ chỗ trong Python.</p>
+                        <p>Công dụng của console.log là show ra giá trị của một biến, dù biến đó thuộc kiểu dữ lliệu gì đi nữa thì vẫn được hiển thị ở ô console trong hộp thoại Inspect Element.</p>
                     </div>
                 </div>
                 <div class="lesson_content1">
-                    <h4>Bài 3: Hiển thị nội dung</h4>
-                    <p>Hãy bắt đầu bằng cách tạo một chương trình ngắn hiển thị "Hello world!". Trong Python, chúng tôi sử dụng câu lệnh print để xuất ra văn bản.
-                    </p>
+                    <h4>Bài 3: Console.log() nâng cao </h4>
+                    <p> In ra nhiều giá trị của các biến khác nhau trong cùng một hàm console.log().</p>
                     <div class="try_code">
                         <p>print('hello world')</p>
-                        <p>print('hello world')</p>
-                        <p>print('Ngo Gia Thai')</p>
-                        <button class="btn btn-primary">Thực hiện</button>
+                        <p>console.log("a = ", a, "; b = ", b, ";)</p>
+                        <button class="btn btn-primary">Luyện tập</button>
                     </div>
-                    <p>Lưu ý rằng văn bản nên được đặt trong dấu ngoặc kép hoặc đơn.</p>
+                   
                     <div class="warning">
                         <i class="fas fa-info-circle"></i>
-                        <p>Câu lệnh print cần phải được theo sau bởi dấu ngoặc đơn, bao gồm đầu ra mà chúng ta muốn tạo.</p>
+                        <p>Lệnh console.log() có cú pháp là console.log(value), trong đó value là một biến hoặc một giá trị mà bạn muốn in ra.</p>
                     </div>
                 </div>
                 <div class="lesson_content1">
-                    <h4>Bài 4: Hiển thị nội dung</h4>
-                    <p>Hãy bắt đầu bằng cách tạo một chương trình ngắn hiển thị "Hello world!". Trong Python, chúng tôi sử dụng câu lệnh print để xuất ra văn bản.</p>
+                    <h4>Bài 4: Console.log() nâng cao</h4>
+                    <p>console.log() một object</p>
                     <div class="try_code">
-                        <p>print('hello world')</p>
-                        <p>print('Ngo Gia Thai')</p>
-                        <button class="btn btn-primary">Thực hiện</button>
+                     <p> var info = {</p>  
+                       <p>  website : "freetuts.net",</p>   
+                        <p> email : "thehalfheart@gmail.com",</p>   
+                      <p>   address : "Buôn Ma Thuột, ĐăkLăk"</p>   
+                      <p>  };</p>
+
+                      <p>console.log(info);</p>
+                      
+                        <button class="btn btn-primary">Luyện tập</button>
                     </div>
-                    <p>Lưu ý rằng văn bản nên được đặt trong dấu ngoặc kép hoặc đơn.</p>
-                    <div class="warning">
-                        <i class="fas fa-info-circle"></i>
-                        <p>Câu lệnh print cần phải được theo sau bởi dấu ngoặc đơn, bao gồm đầu ra mà chúng ta muốn tạo.</p>
-                    </div>
+                    <p>Như vậy hàm console.log() sẽ in ra tất cả các giá trị của một biến nên bạn dễ dàng debug phải không nào. Mình thì rất hay sử dụng console.log để xem kết quả mà ajax trả về có đúng với dữ liệu mong muốn hay không.</p>
+                   
                 </div>
             </div>
         </div>
@@ -102,8 +104,8 @@
                     <p>2087 bình luận</p>
                 </div>
                 <form action="">
-                    <textarea name="" id="" cols="38" rows="3" placeholder="viết bình luận..."></textarea> <br>
-                    <button type="submit" class="btn btn-primary">Đăng bình luận</button>
+                    <textarea name="" id="" cols="38" rows="3" placeholder="vieert bình luận.."></textarea> <br>
+                    <button type="submit" class="btn btn-primary">post</button>
                 </form>
 
             </div>
@@ -115,7 +117,7 @@
                     <div class="comment_content">
                         <div class="comment_content_top">
                             <h5>Gia Thái</h5>
-                            <p>Nó đã được phổ biến vào những năm 1960 với việc phát hành các tờ Letraset chứa các đoạn Lorem Ipsum, và gần đây là phần mềm xuất bản trên máy tính để bàn như Aldus PageMaker bao gồm các phiên bản của Lorem Ipsum.</p>
+                            <p>Khóa học hay, bài tập dễ hiểu, cộng động hỗ trợ nhiệt tình.</p>
                         </div>
                         <div class="comment_content_bottom">
                             <p><i class="far fa-thumbs-up"></i> 59</p>
@@ -131,7 +133,7 @@
                     <div class="comment_content">
                         <div class="comment_content_top">
                             <h5>Khoa Pug</h5>
-                            <p>Nó được phổ biến vào những năm 1960 với việc phát hành các tờ Letraset chứa các đoạn Lorem Ipsum.</p>
+                            <p>Đúng là khóa học mà tôi đang cần, cảm ơn ad đã tạo ra một trang web bổ ích.</p>
                         </div>
                         <div class="comment_content_bottom">
                             <p><i class="far fa-thumbs-up"></i> 22</p>
@@ -147,7 +149,7 @@
                     <div class="comment_content">
                         <div class="comment_content_top">
                             <h5>Vương Phạm</h5>
-                            <p>Nó được phổ biến vào những năm 1960 với việc phát hành các tờ Letraset chứa các đoạn Lorem Ipsum.</p>
+                            <p>Ngoài console.log thì console còn nhiều hàm khác nửa, mọi người có thể cho em biết hàm nào hay được sử dụng được không ạ? </p>
                         </div>
                         <div class="comment_content_bottom">
                             <p><i class="far fa-thumbs-up"></i> 32</p>
@@ -163,7 +165,7 @@
                     <div class="comment_content">
                         <div class="comment_content_top">
                             <h5>Phạm Nhật Vượng</h5>
-                            <p>Nó đã được phổ biến vào những năm 1960 với việc phát hành các tờ Letraset chứa các đoạn Lorem Ipsum, và gần đây là phần mềm xuất bản trên máy tính để bàn như Aldus PageMaker bao gồm các phiên bản của Lorem Ipsum.</p>
+                            <p>Khóa học hay, đánh vào kiến thức trọng tâm, bài tập chất lượng.</p>
                         </div>
                         <div class="comment_content_bottom">
                             <p><i class="far fa-thumbs-up"></i> 59</p>
