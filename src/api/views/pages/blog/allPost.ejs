@@ -22,14 +22,14 @@
                 <div class="sidebar">
                     <form action="/blogs/search" method="GET">
                         <div class="sidebar_searchbox">
-                            <input name="searchKey" type="text" placeholder="Search...">
+                            <input name="searchKey" type="text" placeholder="Nhập từ khóa tìm kiếm...">
                             <input name="category" type="text" hidden value="all">
                             <input name="time" type="text" hidden value="Infinity">
                             <button type="submit"><i class="fas fa-search"></i></button>
                         </div>
                     </form>
                     <div class="category">
-                        <h4>Category</h4>
+                        <h4>Danh mục</h4>
                         <ul class="category_list">
                             <li>
                                 <a href=""><i class="fas fa-angle-right"></i>Javascript cơ bản</a></li>
@@ -52,7 +52,7 @@
                         </ul>
                     </div>
                     <div class="topview">
-                        <h4>Top views</h4>
+                        <h4>Top bài viết được xem nhiều nhất</h4>
                         <ul class="topview_list">
                             <li>
                                 <a href="">
@@ -129,9 +129,9 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                        <% if (pagination[0] == 1){ %>
-                        <li class="page-item disabled"  ><a class="page-link" disabled href="">Previous</a></li>
+                        <li class="page-item disabled"  ><a class="page-link" disabled href="">Trang đầu</a></li>
                         <%   } else { %>
-                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] - 1 %>">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] - 1 %>">Trang trước</a></li>
                         <%  } %>
                         
                         <% for(let i = 1; i <= pagination[1]; i++) {%>
@@ -142,9 +142,9 @@
                         <%  } %>
                         <% } %>
                         <% if (pagination[0] == pagination[1] ) { %>
-                        <li class="page-item disabled"><a class="page-link" href="">Next</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="">Trang cuối</a></li>
                         <% } else { %>
-                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] + 1 %>">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="/blogs/all-post?page=<%- pagination[0] + 1 %>">Trang tiếp</a></li>
                         <% } %>
                         
                     </ul>

@@ -63,9 +63,12 @@ router.get('/blogs', expressLayout, (req, res)=>{
 
 // posts route
 
-
 router.get('/blogs/posts/detail', expressLayout, (req, res)=>{
   res.render('pages/blog/detail.ejs', {auth: req.isAuthenticated()})
+})
+
+router.get('/blogs/posts/lo-trinh-JS', expressLayout, (req, res)=>{
+  res.render('pages/blog/lo-trinh-JS.ejs', {auth: req.isAuthenticated()})
 })
 
 //coding playground
