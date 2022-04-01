@@ -4,7 +4,8 @@
   "description": "a blog to share web development knowlege",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon ./src/server.js"
+    "devStart": "nodemon ./src/server.js",
+    "start": "node ./src/server.js"
   },
   "author": "",
   "license": "ISC",
