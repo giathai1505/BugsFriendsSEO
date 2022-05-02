@@ -54,6 +54,11 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.use('/', allRoute);
 app.use('/auth', authRoute(passport));
+app.get('/robots.txt', async function (req, res, next) {
+    let txt_content = ['User-agent: *', 'Allow: /', 'Sitemap: https://bugfriend-uit.herokuapp.com/sitemap.xml'];
+    res.type('text/plain');
+    res.send(txt_content.join('\n'));
+});
 app.get('/sitemap.xml', (req, res) => {
     let xml_content = [
         '<?xml version="1.0" encoding="UTF-8"?>',

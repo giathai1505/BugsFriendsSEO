@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://bugfriend-uit.herokuapp.com/
+Sitemap: https://bugfriend-uit.herokuapp.com/sitemap.xml
