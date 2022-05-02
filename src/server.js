@@ -2,6 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
 // includes packages
+const sitemap = require('express-sitemap')();
 const express = require('express');
 const passport = require('passport');
 const passportConfig = require('./api/passport-config.js');
@@ -46,9 +47,11 @@ app.set('layout', 'layouts/layout');
 app.use(express.static('public'));
 app.use('/public', express.static(__dirname + '/public'));
 
+// sitemap.generate(app);
+
 app.use('/', allRoute);
 app.use('/auth', authRoute(passport));
-// routes
 
+// routes
 // listen
 app.listen(process.env.PORT || port);
