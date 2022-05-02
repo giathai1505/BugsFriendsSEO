@@ -1,6 +1,15 @@
 <%- contentFor('head') %> 
 <link rel="stylesheet" href="/public/stylesheets/pages/landing/main.css">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-227600566-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-227600566-1');
+</script>
+
 <script src="/public/javascripts/landing.js"></script>
 <%- contentFor('body') %> 
 <section class="page-title-sec">
