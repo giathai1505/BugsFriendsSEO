@@ -1,5 +1,6 @@
 const express = require('express');
 var xml = require('xml');
+
 const router = express.Router();
 const expressLayout = require('express-ejs-layouts');
 
@@ -8,11 +9,6 @@ const Posts = require('../data.js').posts;
 // index route
 router.get('/', expressLayout, (req, res) => {
     res.render('pages/index.ejs', { auth: req.isAuthenticated() });
-});
-
-router.get('/sitemap.xml', (req, res) => {
-    res.set('Content-Type', 'text/xml');
-    res.render('pages/sitemap.xml.ejs');
 });
 
 router.get('/home', expressLayout, (req, res) => {

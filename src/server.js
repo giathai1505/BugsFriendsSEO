@@ -9,6 +9,7 @@ const passportConfig = require('./api/passport-config.js');
 const methodOverride = require('method-override');
 const flash = require('express-flash');
 const session = require('express-session');
+var path = require('path');
 const app = express();
 
 // includes routes
@@ -51,6 +52,10 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.use('/', allRoute);
 app.use('/auth', authRoute(passport));
+app.get('/sitemap.xml', (req, res) => {
+    res.contentType('application/xml');
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
 
 // routes
 // listen
