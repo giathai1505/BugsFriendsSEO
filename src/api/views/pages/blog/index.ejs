@@ -1,5 +1,8 @@
 <%- contentFor("head") %>
 <title>Blog</title>
+<meta charset="utf8">
+<meta name="description" content="Nơi chia sẻ kiến thức, kinh nghiệm coding, bạn sẽ tìm thấy các chủ đề lập trình được quan tâm nhất hiện nay như cách học một ngôn ngữ lập trình, lộ trình để trở thành một Full-stack Dev,... Khám phá ngay!!!">
+
 <link rel="stylesheet" href="/public/stylesheets/pages/blog/homeblog.css" />
 
 <%- contentFor("body") %>
@@ -7,7 +10,7 @@
     <!-- row tiêu đề -->
     <div class="row header">
         <div class="col-sm-12">
-            <h2>BLOG</h2>
+            <h1 class="h1-title">BLOG</h1>
         </div>
     </div>
     <!-- end row tiêu đề -->
@@ -18,19 +21,19 @@
             <div class="box-slide">
                 <div class="clip clip1">
                     <div class="content">
-                        <h3>Blog của Bug-friends</h3>
+                        <h2>BugFriend-UIT Blog</h2>
                         <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
                     </div>
                 </div>
                 <div class="clip clip2">
                     <div class="content">
-                        <h3>Blog của Bug-friends</h3>
+                        <h2>BugFriend-UIT Blog</h2>
                         <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
                     </div>
                 </div>
                 <div class="clip clip3">
                     <div class="content">
-                        <h3>Blog của Bug-friends</h3>
+                        <h2>BugFriend-UIT Blog</h2>
                         <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
                     </div>
                 </div>
@@ -54,10 +57,10 @@
     </div>
     <!-- row chính chứa bài viết -->
     <div class="row list-post">
-        <a href="/blogs/posts/detail" class="col-sm-3 post_item cd">
+        <a href="/blogs/posts/Frontend-va-Backend-la-gi" class="col-sm-3 post_item cd">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/js-item1.jpg" alt="" />
+                    <img src="/public/assets/images/blog/js-item1.jpg" alt="Blog BugFriend-UIT: Tim hieu Frontend, Backend" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -65,8 +68,8 @@
                         <p>Cơ hội nghề nghiệp</p>
                     </div>
                     <div class="post_item-content-body">
-                        <h5>Javascript đâu chỉ có console.log()</h5>
-                        <p>...</p>
+                        <h5>What are Frontend and backend?</h5>
+                        <p>Tìm hiểu về Frontend và Backend trong quá trình xây dựng một website.</p>
                     </div>
                     <div class="post_item-content-footer">
                         <span
@@ -90,7 +93,7 @@
                 <div class="post_item-image">
                     <img
                         src="/public/assets/images/blog/js-item2.jpg"
-                        alt="Lộ trình tự học Javascript từ cơ bản đến nâng cao"
+                        alt="Blog BugFriend-UIT: Lộ trình tự học Javascript từ cơ bản đến nâng cao"
                     />
                 </div>
                 <div class="post_item-content">
@@ -100,7 +103,7 @@
                     </div>
                     <div class="post_item-content-body">
                         <h5>Lộ trình tự học Javascript từ cơ bản đến nâng cao</h5>
-                        <p>...</p>
+                        <p>Hướng dẫn bạn tự học JS từ con số 0!!!</p>
                     </div>
                     <div class="post_item-content-footer">
                         <span
@@ -119,12 +122,12 @@
                 </div>
             </div>
         </a>
-        <a href="/blogs/posts/arrayJS" class="col-sm-3 post_item ltc">
+        <a href="/blogs/posts/mang-trong-JS" class="col-sm-3 post_item ltc">
             <div class="eachpost">
                 <div class="post_item-image">
                     <img
                         src="/public/assets/images/blog/js-item4.jpg"
-                        alt="Những điều cần biết về mảng trong javascript"
+                        alt="Blog BugFriend-UIT: Những điều cần biết về mảng trong javascript"
                     />
                 </div>
                 <div class="post_item-content">
@@ -134,7 +137,7 @@
                     </div>
                     <div class="post_item-content-body">
                         <h5>Những điều cần biết về mảng trong javascript</h5>
-                        <p>...</p>
+                        <p>Tất tần tận kiến thức về mảng trong JS!!!</p>
                     </div>
                     <div class="post_item-content-footer">
                         <span
@@ -153,19 +156,19 @@
                 </div>
             </div>
         </a>
-        <a class="col-sm-3 post_item cn">
+        <a href="/blogs/posts/ung-dung-Python" class="col-sm-3 post_item cn">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                    <img src="/public/assets/images/blog/python1.jpg" alt="Blog BugFriend-UIT: Ứng dụng của Python" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
                         <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
-                        <p>Công ty mới</p>
+                        <p>Kiến thức coding</p>
                     </div>
                     <div class="post_item-content-body">
-                        <h5>Event Loop là gì?</h5>
-                        <p>...</p>
+                        <h5>Ứng dụng của Python</h5>
+                        <p>Tìm hiểu thực tế học Python có thể làm được những gì!!!</p>
                     </div>
                     <div class="post_item-content-footer">
                         <span
@@ -187,7 +190,7 @@
         <a class="col-sm-3 post_item cd">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                    <img src="/public/assets/images/blog/js-item3.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -219,7 +222,7 @@
         <a class="col-sm-3 post_item ltc">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                    <img src="/public/assets/images/blog/js-item3.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -251,7 +254,7 @@
         <a class="col-sm-3 post_item cn">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/htmlcss1.jpg" alt="" />
+                    <img src="/public/assets/images/blog/htmlcss1.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -283,7 +286,7 @@
         <a class="col-sm-3 post_item is">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/abm1-1.jpg" alt="" />
+                    <img src="/public/assets/images/blog/abm1-1.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -315,7 +318,7 @@
         <a class="col-sm-3 post_item cd">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/abm1-2.jpg" alt="" />
+                    <img src="/public/assets/images/blog/abm1-2.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -347,7 +350,7 @@
         <a class="col-sm-3 post_item is">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/abm3-1.jpg" alt="" />
+                    <img src="/public/assets/images/blog/abm3-1.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -379,7 +382,7 @@
         <a class="col-sm-3 post_item ltc">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/htmlcss3.jpg" alt="" />
+                    <img src="/public/assets/images/blog/htmlcss3.jpg" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
@@ -411,7 +414,7 @@
         <a class="col-sm-3 post_item cn">
             <div class="eachpost">
                 <div class="post_item-image">
-                    <img src="/public/assets/images/blog/abm2.png" alt="" />
+                    <img src="/public/assets/images/blog/abm2.png" alt="Blog BugFriend-UIT" />
                 </div>
                 <div class="post_item-content">
                     <div class="post_item-conent-header">
