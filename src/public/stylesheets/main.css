@@ -1,6 +1,7 @@
 @import url('./components/footer.css');
 @import url('./components/header.css');
 @import url('./settings/variables.css');
+@import url('./cssplus.css');
 
 *{
   box-sizing: border-box;
@@ -20,4 +21,5 @@ button{
 a{
   text-decoration: none;
 }
+
 
