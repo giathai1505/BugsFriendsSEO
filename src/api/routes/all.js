@@ -72,15 +72,15 @@ router.get('/blogs/posts/Frontend-va-Backend-la-gi', expressLayout, (req, res) =
     res.render('pages/blog/detail.ejs', { auth: req.isAuthenticated() });
 });
 
-router.get('/blogs/posts/mang-trong-JS', expressLayout, (req, res) => {
+router.get('/blogs/posts/mang-trong-javascript', expressLayout, (req, res) => {
     res.render('pages/blog/arrayJS.ejs', { auth: req.isAuthenticated() });
 });
 
-router.get('/blogs/posts/lo-trinh-JS', expressLayout, (req, res) => {
+router.get('/blogs/posts/lo-trinh-tu-hoc-javascript', expressLayout, (req, res) => {
     res.render('pages/blog/lo-trinh-JS.ejs', { auth: req.isAuthenticated() });
 });
 
-router.get('/blogs/posts/ung-dung-Python', expressLayout, (req, res) => {
+router.get('/blogs/posts/ung-dung-cua-Python', expressLayout, (req, res) => {
     res.render('pages/blog/ungdungPython.ejs', { auth: req.isAuthenticated() });
 });
 
